@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets\textures\Web-Browser-Only/icon.jpg" type="image/x-icon">
+</head>
+<body>
+    <div class="homepage">
+        <h1>TicTacToe</h1>
+        <button id="singlePlayerButton">Single Player</button>
+        <button id="createRoomButton">Create Room</button>
+        <button id="joinRoomButton">Join Room</button>
+    </div>
+    <script src="js/socket.io.js"></script>
+    <script>
+        document.getElementById('singlePlayerButton').addEventListener('click', () => {
+            window.location.href = 'game.html';
+        });
+
+        document.getElementById('createRoomButton').addEventListener('click', () => {
+            window.location.href = 'roomcreator.html';
+        });
+
+        document.getElementById('joinRoomButton').addEventListener('click', () => {
+            window.location.href = 'roomjoiner.html';
+        });
+    </script>
+</body>
+</html>
